@@ -40,7 +40,7 @@ class Solution {
 
         for (auto &d : dirs) {
             int x = i - d[0];
-            int y = j + d[1];
+            int y = j - d[1];
 
             if (x >= 0 && x < board.size() &&
                 y >= 0 && y < board[0].size())
