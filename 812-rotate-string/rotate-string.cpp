@@ -4,11 +4,11 @@ public:
         if ( s.size() != goal.size())
         return false;
         int n = s.size();
-        for (int shift = 0; shift < n; shift++){
+        for (int i = 0; i < n; i++){
             bool match = true;
 
-            for (int i = 0; i < n; i++){
-                if (s[(i + shift) % n] != goal[i]){
+            for (int j = 0; j < n; j++){
+                if (s[(j + i) % n] != goal[j]){
                     match = false;
                     break;
                 }
